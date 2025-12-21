@@ -13,4 +13,3 @@ class LoanBookForm(forms.ModelForm):
         model = BookInstance
         fields = ('book_title','borrower',)
 
-
