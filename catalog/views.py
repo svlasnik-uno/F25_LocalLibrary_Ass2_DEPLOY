@@ -66,6 +66,7 @@ class AuthorCreate(CreateView):
 
     def form_valid(self, form):
         post = form.save(commit=False)
+        print("image = " + str(post.author_image))
         post.save()
         return HttpResponseRedirect(reverse('author_list'))
 

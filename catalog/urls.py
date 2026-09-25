@@ -15,6 +15,8 @@ urlpatterns = [
     path('book/create/', views.BookCreate.as_view(), name='book_create'),
     path('book/<int:pk>/update/', views.BookUpdate.as_view(), name='book_update'),
     path('book/<int:pk>/delete/', views.book_delete, name='book_delete'),
+
+
 ]
 
 # Add urls for a librarian to view available book instances and to loan a book.

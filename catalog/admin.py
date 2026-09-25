@@ -7,7 +7,7 @@ admin.site.register(Author)
 admin.site.register(Genre)
 
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title','author', 'get_genres')
+    list_display = ('id', 'title','author','book_image', 'get_genres')
 
     def get_genres(self, obj):
         return ", ".join([genre.name for genre in obj.genre.all()])
